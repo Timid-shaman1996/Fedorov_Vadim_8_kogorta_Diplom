@@ -1,0 +1,1 @@
+# Fedorov_Vadim_8_kogorta_Diplom
