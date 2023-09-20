@@ -1,11 +1,11 @@
 Работа с базой данных
 Задание 1
 
-SELECT c.login, COUNT(o."inDelivery")
-FROM "Orders" AS o
-INNER JOIN "Couriers" AS c ON o."courierId" = c.id
-WHERE o."inDelivery" = true
+SELECT c.login, COUNT(o.id) AS total_orders
+FROM "Couriers" AS c
+LEFT JOIN "Orders" AS o ON o."courierId" = c.id
 GROUP BY c.login;
+
 
 Задание 2
 
